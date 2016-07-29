@@ -1,0 +1,17 @@
+title: "Raul Mariano"
+author: "Raul Mariano"
+description: "Pra Quem Está Vivo"
+more: "Leia mais"
+url: "http://www.raulmariano.com.br"
+permalink: none
+exclude: [gallery]
+encoding: utf-8
+
+excerpt_separator: "\n\n\n"
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
+gems:
+  - octopress-autoprefixer
+  - kramdown
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from

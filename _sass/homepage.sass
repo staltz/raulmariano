@@ -1,0 +1,156 @@
+.nav-bar
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  text-align: center
+  z-index: 10
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 100%)
+  h3
+    display: inline-block
+    margin-right: 1.5em
+    a
+      color: $white
+      border: none
+
+.hero-video
+  position: relative
+  height: 56.25vw
+  width: 100%
+  h1
+    position: absolute
+    top: 16vw
+    left: 0
+    right: 0
+    text-align: center
+    font-size: 9vw
+    font-weight: 800
+    margin: 0
+  .soundcloud-embed-hero
+    position: absolute
+    text-align: center
+    top: 40vw
+    left: 0
+    right: 0
+    width: 100%
+    height: 10vw
+
+.hero
+  display: none
+  position: relative
+  height: 66vw
+  width: 100%
+  background-image: url("./img/tudo-espera-por-nos.jpg")
+  background-position-y: -7vw
+  background-size: cover
+  .portrait
+    position: absolute
+    height: 26vw
+    width: 26vw
+    top: 17vw
+    left: 14vw
+    background-image: url("./img/capa.jpg")
+    background-size: cover
+  h1
+    position: absolute
+    top: 16vw
+    left: 49vw
+    font-size: 5vw
+    font-weight: 800
+    margin: 0
+  .soundcloud-embed-hero
+    position: absolute
+    top: 33vw
+    left: 49vw
+    width: 31vw
+    height: 10vw
+
+.passaro
+  height: 50vw
+  width: 100%
+  text-shadow: 0 1px 6px #305894
+  background-image: url('./img/passaro.jpg')
+  background-size: cover
+  blockquote
+    font-size: 1.5em
+    margin: 0
+  h3
+    font-size: 1.5em
+
+.animais
+  height: 50vw
+  width: 100%
+  background-image: url('./img/animais.jpg')
+  background-size: cover
+  .pra-quem-esta-vivo
+    display: flex
+    justify-content: space-between
+  h1
+    display: inline-block
+    font-size: 5.8rem
+    font-weight: 800
+    margin-top: 0.3em
+    line-height: 6.7rem
+    text-shadow: 0 2px 7px rgba(58,72,47,0.4)
+  ul
+    display: inline-block
+    padding: 0
+  h3
+    margin-bottom: $small-space
+    display: block
+    a
+      letter-spacing: 0
+      display: inline-block
+    a.spotify-link
+      +box_link(#45f884, #02473f, $white, rgb(29, 185, 84))
+    a.soundcloud-link
+      +box_link(#ff6b14, #02473f, $white, rgb(255, 84, 0))
+    a.download-link
+      +box_link($white, #02473f, $black, $white)
+
+.o-mundo-era-outro-lugar
+  height: 100vw
+  width: 100%
+  text-shadow: 0 1px 6px #305894
+  background-image: url('./img/o-mundo-era-outro-lugar.jpg')
+  background-size: cover
+  .depoimento-alves
+    margin-top: 20rem
+  blockquote
+    font-size: 1.5em
+    margin: 0
+  h3
+    font-size: 1.5em
+
+.tudo-espera-por-nos
+  height: 100vw
+  width: 100%
+  background-image: url('./img/tudo-espera-por-nos.jpg')
+  background-size: cover
+
+.outro-norte
+  height: 100vw
+  width: 100%
+  background-image: url('./img/outro-norte.jpg')
+  background-size: cover
+  h2
+    font-size: 2em
+  p
+    font-size: 1.5em
+
+footer
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50px)
+  text-align: center
+  a.contact-button
+    +box_link($white, #02473f, $black, $white)
+  .page-body
+    padding: 5rem 1rem 2rem
+  nav.footer-nav
+    text-align: center
+    h3
+      display: inline-block
+      margin-left: 0.75em
+      margin-right: 0.75em
+      a
+        color: $white
+        border: none

@@ -1,0 +1,84 @@
+*, *:before, *:after
+    box-sizing: border-box
+
+body
+    background: $green-dark
+    font-family: $body-font
+    font-weight: 400
+    font-size: 19px
+    line-height: 1.6
+    color: $white
+    margin: 0
+    padding: 0
+
+body > header h1
+    font-weight: bold
+    margin-top: .25em
+    margin-bottom: 1em
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 300
+    line-height: 1.5em
+    font-family: $header-font
+    header &
+        text-transform: uppercase
+
+.wide-page-body, .page-body
+    margin: 0 auto
+
+.wide-page-body
+    max-width: $total-page-width
+
+.page-body
+    max-width: $max-article-width
+    padding: $large-space $small-space
+
+nav ul
+    margin: 0
+    padding-left: 0
+
+a
+    +anchor_style($red)
+
+strong, b, th
+    font-weight: bold
+
+pre
+    overflow: auto
+    padding: $small-space 2px $small-space $small-space
+    font-size: .8em
+
+iframe, img, embed, object, video
+    max-width: 100%
+    border-radius: 2px
+
+table
+    border-collapse: collapse
+    width: 100%
+    th, td
+        padding: .5em 1em
+        border: 1px solid
+
+p > img, p > svg
+    margin: $normal-space auto
+    display: block
+    width: 65%
+    max-width: 30em
+    min-width: 16em
+    max-height: 15em
+
+.mobile-hidden
+    display: inherit
+.mobile-shown
+    display: none
+
+@media only screen and (max-width: 680px)
+    body
+        font-size: calc(.6vw + .8em)
+        padding: 0
+        .wide-page-body
+            padding: 0 $small-space
+    .mobile-hidden
+        display: none
+    .mobile-shown
+        display: inherit

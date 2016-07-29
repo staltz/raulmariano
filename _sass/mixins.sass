@@ -1,0 +1,20 @@
+=anchor_style($anchor-color)
+    color: $anchor-color
+    text-decoration: inherit
+    border-bottom: 1px dotted $anchor-color
+    &:hover
+        border-bottom: 1px solid $anchor-color
+
+=box_link($normal-fg: $red, $normal-bg: $black, $hover-fg: $white, $hover-bg: $red)
+    font-family: $body-font
+    font-weight: 400
+    color: $normal-fg
+    border: 2px solid $normal-fg
+    background-color: $normal-bg
+    border-radius: 5px
+    padding: 5px 15px
+    transition: background-color .2s ease-out, color .2s ease-out
+    &:hover
+        border: 2px solid $hover-bg
+        background-color: $hover-bg
+        color: $hover-fg
