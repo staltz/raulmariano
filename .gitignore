@@ -2,6 +2,7 @@ _site/
 .git/
 .DS_Store
 .sass-cache/
+ignore/
 node_modules/
 npm-debug.log
 photo-gallery.js
